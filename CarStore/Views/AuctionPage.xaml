@@ -33,7 +33,7 @@
                 <!-- TODO: Replace column definitions to match real data. Consider adding Header values to Resources.resw. -->
                 <controls:DataGridTextColumn Binding="{Binding AuctionId}" Header="ID" />
                 <controls:DataGridTextColumn Binding="{Binding Name}" Header="Tên" />
-                <controls:DataGridTextColumn Binding="{Binding Description}" Header="Mô tả" />
+                <controls:DataGridTextColumn Binding="{Binding Description}" Header="Mô tả" MaxWidth="300"/>
                 <controls:DataGridTextColumn Binding="{Binding StartDate}" Header="Thời gian BD" />
                 <controls:DataGridTextColumn Binding="{Binding Price, Converter={StaticResource currency}}" Header="Giá khởi điểm" />
                 <controls:DataGridTextColumn Binding="{Binding Car.ManufacturerId, Converter={StaticResource Manufacturer}}" Header="Nhà sản xuất" />
@@ -56,7 +56,7 @@
                 <controls:DataGridTemplateColumn Header="Tham gia">
                     <controls:DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="JoinBtn_Click"
+                            <Button Click="JoinBtn_Click" BorderThickness="0" Background="Transparent"
                                     CommandParameter="{Binding}"
                                     HorizontalAlignment="Center" 
                                     VerticalAlignment="Center">
@@ -69,7 +69,7 @@
                 <controls:DataGridTemplateColumn Header="Xóa">
                     <controls:DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="DeleteBtn_Click"
+                            <Button Click="DeleteBtn_Click" BorderThickness="0" Background="Transparent"
                                     CommandParameter="{Binding}"
                                     HorizontalAlignment="Center" 
                                     VerticalAlignment="Center">
@@ -83,7 +83,7 @@
                 <controls:DataGridTemplateColumn Header="Thông tin">
                     <controls:DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="InforBtn_Click"
+                            <Button Click="InforBtn_Click" BorderThickness="0" Background="Transparent"
                                     CommandParameter="{Binding}"
                                     HorizontalAlignment="Center" 
                                     VerticalAlignment="Center">

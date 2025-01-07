@@ -125,6 +125,8 @@ public partial class App : Application
             services.AddTransient<AddAuctionPage>();
             services.AddTransient<ChatPageViewModel>();
             services.AddTransient<ChatPage>();
+            services.AddTransient<ReportViewModel>();
+            services.AddTransient<ReportPage>();
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));

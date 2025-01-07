@@ -25,8 +25,16 @@ public class PageService : IPageService
         Configure<DetailAuctionViewModel, DetailAuctionPage>();
         Configure<AddAuctionViewModel, AddAuctionPage>();
         Configure<RegisterDetailViewModel, RegisterDetailPage>();
-        Configure<ChatPageViewModel, ChatPage>(); // Ensure this is not commented
+        Configure<ChatPageViewModel, ChatPage>();
         Configure<CompareViewModel, ComparePage>();
+        Configure<SearchingViewModel, SearchingPage>();
+        Configure<CarDetailViewModel, CarDetailPage>();
+        Configure<AddItemPageViewModel, AddItemPage>();
+        Configure<FilterViewModel, FilterPage>();
+        Configure<ForgotPasswordViewModel, ForgotPasswordPage>();
+        Configure<VerifyViewModel, VerifyPage>();
+        Configure<ScheduleFormViewModel, ScheduleForm>();
+        Configure<ReportViewModel, ReportPage>();
     }
 
     public Type GetPageType(string key)

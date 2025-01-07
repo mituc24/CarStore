@@ -59,6 +59,7 @@
     <None Remove="Views\DetailAuctionPage.xaml" />
     <None Remove="Views\EditItem.xaml" />
     <None Remove="Views\MockAnyCarPage.xaml" />
+    <None Remove="Views\ReportPage.xaml" />
     <None Remove="Views\UserCtrl\Compare.xaml" />
     <None Remove="Views\UserCtrl\RowOfTable.xaml" />
   </ItemGroup>
@@ -66,6 +67,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\ReportPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\AddAuctionPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

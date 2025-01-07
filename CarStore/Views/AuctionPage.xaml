@@ -11,6 +11,7 @@
     mc:Ignorable="d"
     xmlns:helpers ="using:CarStore.Helpers"
     Background="{ThemeResource GradientPageBackground}">
+    
     <Page.Resources>
         <local1:LongToVNCurrencyConverter x:Key="currency"/>
         <local1:IdToEngineTypeConverter x:Key="EngineType"/>
@@ -99,5 +100,15 @@
             </controls:DataGrid.Columns>
             
         </controls:DataGrid>
+
+        <Button Click="CreateReport"
+                Visibility="{x:Bind ViewModel.IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Symbol="Add" />
+                    <TextBlock Text="Tạo báo cáo đấu giá" />
+                </StackPanel>
+            </Button.Content>
+        </Button>
     </Grid>
 </Page>

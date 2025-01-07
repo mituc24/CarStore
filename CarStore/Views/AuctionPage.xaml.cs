@@ -125,6 +125,8 @@ public sealed partial class AuctionPage : Page
         }
     }
 
-
-
+    private void CreateReport(object sender, RoutedEventArgs e)
+    {
+        Frame.Navigate(typeof(ReportPage));
+    }
 }

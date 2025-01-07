@@ -1,0 +1,4 @@
+000007: Xin chào, tôi muốn liên hệ!
+000003: Tôi có thể giúp gì cho bạn ?
+000003: Bạn muốn xem mẫu xe nào
+000007: Tôi muốn xe Honda CRV của bạn

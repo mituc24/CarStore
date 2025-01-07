@@ -27,7 +27,7 @@ public class ReportViewModel : ObservableObject
         Task.Run(async () => Auctions = await auctionDao.GetAllAsync()).Wait();
     }
 
-    private string CreateListInfoOfAuction(List<Auction> auctions)
+    public string CreateListInfoOfAuction(List<Auction> auctions)
     {
         var result = "";
         foreach (Auction auction in auctions)
